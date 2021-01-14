@@ -1,0 +1,29 @@
+<h1>Checkout</h1>
+<mat-list role="list" *ngIf="cart.length > 0 else elseBlock">
+    <mat-list-item role="listitem" *ngFor="let product of cart" class="cart-item">
+        <div class="cart-item-desc">
+            <div>{{product.product.productName + " x" + product.quantity}}</div>
+            <div>{{product.totalPrice | currency}}</div>
+        </div>
+    </mat-list-item>
+</mat-list>
+<ng-template #elseBlock>No Item in cart</ng-template>
+
+<mat-divider></mat-divider>
+
+<form class="cart-form">
+    <mat-form-field>
+        <mat-label>Coupon Code</mat-label>
+        <input matInput [(ngModel)]="promoCode" name="promoCode">
+    </mat-form-field>
+    <div class="button-wrapper">
+        <button mat-stroked-button color="primary" (click)="applyCoupon()">Apply Code</button>
+        <button mat-stroked-button color="warn" (click)="removeCoupon()">Remove Code</button>
+    </div>
+</form>
+&nbsp;
+<mat-divider></mat-divider>
+&nbsp;
+<div>
+    Total: {{getTotal() | currency}}
+</div>

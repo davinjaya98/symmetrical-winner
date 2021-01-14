@@ -1,0 +1,26 @@
+[
+    {
+        "productId": "wf",
+        "productName": "Workflow",
+        "price": "199.99",
+        "currency": "usd",
+        "region": "us",
+        "status": true
+    },
+    {
+        "productId": "docgen",
+        "productName": "Document Generation",
+        "price": "9.99",
+        "currency": "usd",
+        "region": "us",
+        "status": true
+    },
+    {
+        "productId": "form",
+        "productName": "Form",
+        "price": "99.99",
+        "currency": "usd",
+        "region": "us",
+        "status": true
+    }
+]

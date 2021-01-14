@@ -1,0 +1,59 @@
+[
+    {
+        "promoCode": "RRD4D32",
+        "promoDescription": "10% discount for orders above $1000 (pre-discount)",
+        "promoType": "percentage-cut",
+        "percentageDiscount": 10,
+        "priceReduction": null,
+        "minUnit": 1,
+        "maxUnit": null,
+        "requiredUnit": null,
+        "minPrice": 1000,
+        "maxPrice": null,
+        "region": "us",
+        "applicableProduct": null,
+        "status": true
+    },
+    {
+        "promoCode": "44F4T11",
+        "promoDescription": "15% discount for orders above $1500 (pre-discount)",
+        "promoType": "percentage-cut",
+        "percentageDiscount": 15,
+        "priceReduction": null,
+        "minUnit": 1,
+        "maxUnit": null,
+        "requiredUnit": null,
+        "minPrice": 1500,
+        "maxPrice": null,
+        "applicableProduct": null,
+        "status": true
+    },
+    {
+        "promoCode": "FF9543D1",
+        "promoDescription": "Reduces the docgen price to $8.99 a unit when at least 10 documents are purchased",
+        "promoType": "price-reduction",
+        "percentageDiscount": null,
+        "priceReduction": 8.99,
+        "minUnit": 1,
+        "maxUnit": null,
+        "requiredUnit": ["docgen|10"],
+        "minPrice": null,
+        "maxPrice": null,
+        "applicableProduct": ["docgen"],
+        "status": true
+    },
+    {
+        "promoCode": "YYGWKJD",
+        "promoDescription": "Reduces the form price to $89.99 a unit when at least 1 wf is purchase",
+        "promoType": "price-reduction",
+        "percentageDiscount": null,
+        "priceReduction": 89.99,
+        "minUnit": 1,
+        "maxUnit": null,
+        "requiredUnit": ["wf|1"],
+        "minPrice": null,
+        "maxPrice": null,
+        "applicableProduct": ["form"],
+        "status": true
+    }
+]
